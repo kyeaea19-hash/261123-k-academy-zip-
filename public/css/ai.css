@@ -1,0 +1,115 @@
+/* ==================== AI 패널 (Step 8) ==================== */
+.ai-panel {
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  background-color: var(--color-paper);
+}
+
+.ai-panel--result {
+  background-color: var(--color-primary-soft);
+  border-color: transparent;
+}
+
+.ai-panel__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.ai-panel__title {
+  font-size: var(--fs-display-xs);
+  font-weight: 500;
+}
+
+.ai-panel__desc,
+.ai-panel__hint {
+  font-size: var(--fs-caption-md);
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-sm);
+}
+
+.ai-panel__hint {
+  color: var(--color-graphite);
+}
+
+.ai-panel__stale {
+  font-size: var(--fs-caption-md);
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-sm);
+}
+
+.ai-panel__sub {
+  font-size: var(--fs-body-md);
+  font-weight: 600;
+  margin: var(--space-sm) 0 var(--space-xxs);
+}
+
+.ai-panel__overview {
+  font-size: var(--fs-body-md);
+  line-height: var(--lh-body);
+}
+
+.ai-panel__list {
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: var(--fs-body-md);
+  line-height: var(--lh-body);
+}
+
+.ai-panel__keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--space-sm);
+}
+
+.ai-panel__keywords .badge--ai {
+  background-color: var(--color-paper);
+}
+
+.ai-panel__foot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.ai-panel__time {
+  font-size: var(--fs-caption-sm);
+  color: var(--color-graphite);
+}
+
+.ai-panel__error {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+  font-size: var(--fs-caption-md);
+  color: var(--color-bloom-deep);
+}
+
+.ai-suggest {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs) var(--space-sm);
+  margin-top: var(--space-sm);
+  padding: 12px 16px;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary-soft);
+  font-size: var(--fs-caption-md);
+}
+
+.ai-suggest__label {
+  font-weight: 600;
+}
+
+.ai-suggest__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}

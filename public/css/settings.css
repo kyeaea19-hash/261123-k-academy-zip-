@@ -1,0 +1,155 @@
+/* ==================== 검색 · 설정 (Step 9) ==================== */
+.search-hit {
+  display: flex;
+  gap: var(--space-xs);
+  align-items: baseline;
+  margin-top: var(--space-xs);
+  font-size: var(--fs-body-md);
+  color: var(--color-charcoal);
+  line-height: var(--lh-body);
+}
+
+.search-hit__label {
+  flex-shrink: 0;
+}
+
+.search-hit__text {
+  min-width: 0;
+  word-break: break-word;
+}
+
+.search-hit mark {
+  background-color: var(--color-primary-soft);
+  color: var(--color-ink);
+}
+
+.settings-section {
+  margin-bottom: var(--space-xxl);
+}
+
+.settings-section__title {
+  font-size: var(--fs-display-xs);
+  font-weight: 500;
+  margin-bottom: var(--space-md);
+}
+
+.settings-section--danger {
+  border: 1px solid var(--color-bloom-deep);
+}
+
+.settings-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-md);
+}
+
+.settings-row--tight {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.settings-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.settings-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin: var(--space-sm) 0;
+}
+
+.settings-result {
+  margin-top: var(--space-sm);
+  font-size: var(--fs-caption-md);
+  color: var(--color-charcoal);
+}
+
+.settings-result--ok {
+  color: var(--color-primary);
+}
+
+.settings-result--bad {
+  color: var(--color-bloom-deep);
+}
+
+.storage-bar {
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-fog);
+  overflow: hidden;
+}
+
+.storage-bar__fill {
+  height: 100%;
+  width: 0;
+  background-color: var(--color-ink);
+  border-radius: var(--radius-pill);
+}
+
+@media (max-width: 767px) {
+  .settings-row:not(.settings-row--tight) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+}
+
+/* ==================== 헤더 반응형 (03 §1.1~1.2) ==================== */
+.site-nav__mobile-only {
+  display: none;
+}
+
+.utility-strip__settings {
+  display: inline-flex;
+  align-items: center;
+}
+
+.utility-strip__settings-icon {
+  display: none;
+}
+
+.mobile-search {
+  border-bottom: 1px solid var(--color-hairline);
+  background-color: var(--color-canvas);
+  padding: 6px 0;
+}
+
+.mobile-search[hidden] {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .site-nav__menu,
+  .site-nav__desktop-only {
+    display: none;
+  }
+  .site-nav__mobile-only {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-search {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .utility-strip__stat,
+  .utility-strip__meta > [aria-hidden="true"],
+  .utility-strip__settings-text {
+    display: none;
+  }
+  .utility-strip__settings-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+  }
+}

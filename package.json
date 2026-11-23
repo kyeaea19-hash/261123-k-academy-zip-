@@ -1,0 +1,17 @@
+{
+  "name": "academy-summary-zip",
+  "version": "1.0.0",
+  "private": true,
+  "description": "전력시장 디지털 인재 아카데미 학습 기록 웹앱 - 요약 zip",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "test": "node --test tests/"
+  },
+  "dependencies": {
+    "openai": "^4.85.4"
+  }
+}

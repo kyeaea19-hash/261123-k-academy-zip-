@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+.vercel/
+.DS_Store
+Thumbs.db
+
+# 예전 문서 사본 (원본: AGENTS.md, PRD.md, docs/)
+AGENTS_6.md
+PRD_6.md
+academy-summary-zip-docs/
